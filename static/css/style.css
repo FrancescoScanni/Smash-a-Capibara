@@ -3,3 +3,19 @@ body{
     background-image: url("/static/media/images/mobBg.jpg");
     background-size: cover;
 }
+
+.capi{
+  opacity: 0 !important;
+  transform: translateY(50%) !important; 
+  transition: all 0.1s ease-in-out !important;
+}
+.bomb{
+  opacity: 0 !important;
+  transform: translateY(40%) !important; 
+  transition: all 0.2s ease-in-out !important;
+}
+
+.hit {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}

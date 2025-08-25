@@ -1,0 +1,6 @@
+export let button=document.querySelector("#start")
+export let life=document.querySelectorAll(".life .heart")
+export let stars=document.querySelectorAll(".stars .star")
+export let capi=document.querySelectorAll(".capi")
+export let bomb=document.querySelectorAll(".bomb")
+export let puddle=document.querySelectorAll(".puddle")

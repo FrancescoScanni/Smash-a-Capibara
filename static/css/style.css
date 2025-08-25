@@ -1,6 +1,6 @@
 
 body{
-    background-image: url("/static/media/images/mobBg.jpg");
+    background-image: url("./static/media/images/mobBg.jpg");
     background-size: cover;
 }
 

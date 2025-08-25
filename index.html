@@ -3,11 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/css/style.css">
-
+    <link rel="stylesheet" href="/static/css/style.css">
+    <!--Nes js-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nes.css/2.3.0/css/nes.min.css" rel="stylesheet"> 
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/nes.css/2.3.0/css/nes-core.min.css" rel="stylesheet">
+    <!--tailwind-->
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Whack a Capibara - Game</title>
 </head>
-<body>
+<body class="flex flex-col items-center">
     
+    <!--Header - Desk & Mob-->
+    <header class="flex justify-between mt-[2vh] h-[90px] w-[100%]              lg:h-[200px]">
+        <div class="hidden logo lg:flex"><img src="static\media\images\logo.png" class="w-[370px] h-[200px]"></div>
+        <div class="logo lg:hidden "><img src="static\media\images\logo.png" class="w-[170px] h-[90px]"></div>
+        <div class="social flex items-center gap-3 mr-[5vw]     lg:gap-5 lg:mr-[5vw]">
+            <a href="https://www.instagram.com/"><i class="nes-icon instagram is-medium"></i></a>
+            <a href="https://github.com/"><i class="nes-icon github is-medium "></i></a>
+            <a href="https://www.google.com/"><i class="nes-icon google is-medium"></i></a>
+        </div>
+    </header>
+
+
+    <!--score - mob-->
+    <div class="stars figures flex justify-center items-center px-[12vw] mt-[2.5vh] gap-3          lg:hidden lg:px-[30vw]">
+            <i class="nes-icon is-medium star is-transparent"></i> 
+            <i class="nes-icon is-medium star is-transparent"></i> 
+            <i class="nes-icon is-medium star is-transparent"></i> 
+            <i class="nes-icon is-medium star is-transparent"></i> 
+    </div>
+
+
+
+    <!--Grid (main)-->
+    <div class="mainHero flex justify-between items-center">
+        <!--score desk-->
+        <div class="stars figures flex hidden flex-col justify-center items-center mt-[2.5vh] gap-3 ml-[8vw] hover:scale-[1.2] transition transition-duration-200         lg:flex xl:scale-150">
+            <i class="nes-icon is-large star is-transparent"></i> 
+            <i class="nes-icon is-large star is-transparent"></i> 
+            <i class="nes-icon is-large star is-transparent"></i> 
+            <i class="nes-icon is-large star is-transparent"></i> 
+        </div>
+
+
+        <!--capibaras-->
+        <div class="grid grid-cols-3 px-[12vw] mt-[8vh] gap-x-4 gap-y-9      lg:mt-[0vh] lg:px-[17vw] lg:gap-x-8 lg:gap-y-14">
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20          ">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10      lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20          ">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10      lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20          ">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10      lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+            <div class="den flex justify-center items-center">
+                <img src="static\media\images\puddle.png" class="h-[80%] w-[100%] z-20">
+                <img src="static\media\images\capi.png" class="absolute w-[65px] h-[80px] mt-[15%] z-10             lg:mt-[8%] lg:w-[8%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+                <img src="static\media\images\bomb.png" class="absolute w-[20%] h-[12%] ml-[5vw] mt-[15%] z-10      lg:ml-[2vw] lg:mt-[8%] lg:w-[10%] lg:h-[12%] xl:w-[8%] xl:h-[18%]">
+            </div>
+        </div>
+
+
+        <!--Life desk-->
+        <div class="life figures hidden flex flex-col justify-center items-center mt-[2.5vh] mr-[8vw] hover:scale-[1.2] transition transition-duration-200          xl:scale-150 lg:flex">
+            <i id ="c1" class="nes-icon is-large heart"></i>
+            <i id ="c2" class="nes-icon is-large heart"></i>
+            <i id ="c3" class="nes-icon is-large heart"></i>
+        </div>
+    </div>
+    
+
+    <!--Life mob-->
+    <div class="life figures flex justify-center items-center px-[12vw] mt-[2.5vh]          lg:hidden lg:px-[30vw]">
+        <i id ="c1" class="nes-icon is-large heart"></i>
+        <i id ="c2" class="nes-icon is-large heart"></i>
+        <i id ="c3" class="nes-icon is-large heart"></i>
+    </div>
+
+
+    <!--start-->
+    <button type="button" class="nes-btn is-success w-[30vw] mt-[2.5vh]        ">Play</button>
+
+
 </body>
 </html>
